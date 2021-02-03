@@ -6,7 +6,8 @@ const getRandomNumber = (min, max) => {
 
 const getRandomInteger = (min, max, decimalPlaces) => {
   const rand = min - 0.5 + Math.random() * (max - min + 1);
-  return Math.round(rand.toFixed(decimalPlaces));
+  const factorOfTen = Math.pow(10, decimalPlaces);
+  return Math.round(rand * factorOfTen) / factorOfTen;
 }
 
 getRandomNumber(0, 10);
