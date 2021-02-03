@@ -10,5 +10,6 @@ const getRandomInteger = (min, max, decimalPlaces) => {
   return Math.round(rand * factorOfTen) / factorOfTen;
 }
 
-getRandomNumber(0, 10);
-getRandomInteger(0, 1, 2);
+getRandomNumber(0, 100);
+getRandomInteger(3, 10, 3);
+
